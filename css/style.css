@@ -1,7 +1,74 @@
-/**
- * Place your custom styles here.
- */
+/*
+Yellow - #ebe225
+Purple - #3f2682
+*/
 
- body{
-   background:none;
- }
+body{
+  margin-top:0px;
+}
+
+.navbar{
+  border-radius: 0px;
+  border:none;
+  margin-bottom: 0px;
+}
+
+a.logo{
+  /* 8px margin-top is assigned to navbar-btn */
+  margin:37px 0px 0px 0px;
+}
+
+a.navbar-brand{
+  display:none;
+}
+
+header.navbar{
+  background:#ebe255;
+  height:216px;
+}
+
+nav#block-itsweb-main-menu ul.navbar-nav{
+  top:90px;
+  left:100px;
+  position: relative;
+}
+
+nav#block-itsweb-main-menu ul.navbar-nav li{
+  margin:0px 3px 0px 3px;
+}
+
+nav#block-itsweb-main-menu ul.navbar-nav li a:link{
+  color:#3f2682;
+  text-transform:uppercase;
+}
+
+nav#block-itsweb-main-menu ul.navbar-nav li a:visited{
+  text-decoration: underline;
+  color:#3f2682;
+}
+
+nav#block-itsweb-main-menu ul.navbar-nav li a:hover,
+nav#block-itsweb-main-menu ul.navbar-nav li a:active{
+  color:#fff;
+  background-color: #3f2682;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 700px;
+}
+
+.jumbotron.home {
+  background: url("../images/home_jtron.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+.jumbotron h1{
+  text-transform: uppercase;
+  color:#fff;
+}
