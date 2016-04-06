@@ -1,0 +1,112 @@
+/*
+=========================================================================
+Jumbotron
+=========================================================================
+*/
+
+.jumbotron.home {
+  background: url("../images/jtron_home.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/*
+=========================================================================
+Content Top
+=========================================================================
+*/
+
+.career-test{
+  height:100%;
+  background: #EBE255;
+}
+
+.career-test a{
+  text-transform: uppercase;
+  color: #3F2683;
+  padding:65px 50px;
+  display: table;
+  margin: 0 auto;
+  font-size: 2.5em;
+}
+
+/* Fallback for course imagery on XS devices */
+
+div.course-xs-fallback{
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #F5F5F5;
+  margin:0px 0px 10px 0px;
+}
+
+div.course-xs-fallback a{
+  color: #3F2683;
+  padding:30px 20px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.95em;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.course-xs-fallback a:hover{
+  color: #3F2683;
+  background: #EBE255;
+}
+
+/*
+=========================================================================
+Content Bottom
+=========================================================================
+*/
+
+div.edu-partners{
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #F5F5F5;
+  margin:0px 0px 10px 0px;
+}
+
+div.edu-partners a{
+  color: #3F2683;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.95em;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.edu-partners .img-responsive{
+  display: inline-block;
+}
+
+/*
+=========================================================================
+Page Closure
+=========================================================================
+*/
+
+div.ind-partners{
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #fff;
+  margin:0px 0px 10px 0px;
+}
+
+div.ind-partners a{
+  color: #3F2683;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.95em;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.ind-partners .img-responsive{
+  display: inline-block;
+}
