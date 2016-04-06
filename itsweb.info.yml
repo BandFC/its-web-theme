@@ -10,6 +10,7 @@ regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   search_header: 'Search Header'
+  jumbotron: 'Jumbotron'
   header: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'
@@ -20,6 +21,7 @@ regions:
   sidebar_second: 'Secondary'
   page_closure: 'Page Closure'
   footer: 'Footer'
+  tandc: 'Terms and Conditions'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 

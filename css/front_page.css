@@ -15,20 +15,6 @@ Content Top
 =========================================================================
 */
 
-.career-test{
-  height:100%;
-  background: #EBE255;
-}
-
-.career-test a{
-  text-transform: uppercase;
-  color: #3F2683;
-  padding:65px 50px;
-  display: table;
-  margin: 0 auto;
-  font-size: 2.5em;
-}
-
 /* Fallback for course imagery on XS devices */
 
 div.course-xs-fallback{
@@ -53,6 +39,36 @@ div.course-xs-fallback a{
 div.course-xs-fallback a:hover{
   color: #3F2683;
   background: #EBE255;
+}
+
+/*
+=========================================================================
+Career Test
+=========================================================================
+*/
+
+.career-test{
+  height:100%;
+  background: #EBE255;
+}
+
+.career-test a.ctestlg,
+.career-test a.ctestsm{
+  text-transform: uppercase;
+  color: #3F2683;
+  margin:65px auto 50px auto;
+  display: table;
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+.career-test a.ctestlg{
+  font-size: 2.5em;
+}
+
+.career-test a.ctestsm{
+  font-size: 1.5em;
 }
 
 /*

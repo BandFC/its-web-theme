@@ -21,7 +21,7 @@ body{
 
 img.yellow-bar{
   width:66px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 a.logo{
@@ -244,7 +244,7 @@ Jumbotron
 .jumbotron .fom-wrap{
   width: 138px;
   display: block;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .jumbotron a.fom{
@@ -375,23 +375,18 @@ footer.footer .region-footer a:hover{
   text-decoration: none;
 }
 
+
+footer.footer .region-footer a.emailaddsm{ font-size: 0.75em}
+
+footer.footer .region-footer a:hover{
+  color:#3F2683;
+  text-decoration: none;
+}
+
 footer.footer .region-footer .glyphicon-earphone,
 footer.footer .region-footer .glyphicon-envelope{
   font-size: 1.5em;
   color:#3f2683;
-}
-
-footer.footer .tandc{
-  height:100%;
-  margin:20px 0px 0px 0px;
-  background:#747474;
-}
-
-footer.footer .tandc a{
-  text-align: center;
-  color:#fff;
-  padding:20px 0px 20px 0px;
-  display: block;
 }
 
 footer.footer .region-footer #its_social{
@@ -424,3 +419,22 @@ footer.footer .region-footer #its_social ul li a{
 
 footer.footer .region-footer #its_social ul li a.facebook{ background: url(../images/its_facebook.png) no-repeat; }
 footer.footer .region-footer #its_social ul li a.twitter{ background: url(../images/its_twitter.png) no-repeat; }
+
+/*
+=========================================================================
+Terms and Conditions
+=========================================================================
+*/
+
+.tandc{
+  height:100%;
+  margin:20px 0px 0px 0px;
+  background:#747474;
+}
+
+.tandc a{
+  text-align: center;
+  color:#fff;
+  padding:20px 0px 20px 0px;
+  display: block;
+}

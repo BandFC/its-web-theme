@@ -105,158 +105,78 @@
   {% endblock %}
 {% endif %}
 
-{# Search #}
+{# Search Header #}
 {% if page.search_header %}
-<div id="search_header" class="container">
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-4">
-      {{ page.search_header }}
+  {% block search_header %}
+    <div id="search_header" class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          {{ page.search_header }}
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  {% endblock %}
 {% endif %}
 
 {# Jumbotron #}
-<div role="Jumbotron" class="jumbotron home">
-  <div class="container tagline">
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
-        <h1>Welcome to Illuminate Training Solutions <br> A national provider of quality <br> commercial training</h1>
-        <img src="/itsweb-local/themes/itsweb/images/yellow_bar.png" class="img-responsive yellow-bar hidden-xs" alt="ITS" title="ITS">
-        <h3 class="hidden-xs">ITS was created to expand and diversify the hugely successful employer <br> arm of Blackpool and The Fylde College, an Ofsted &lsquo;Outstanding&rsquo; college</h3>
-        <div class="fom-wrap">
-          <a class="btn btn-default fom" href="#" role="button">Find out more</a>
+{% if page.jumbotron %}
+  {% block jumbotron %}
+    <div role="Jumbotron" class="jumbotron home">
+      <div class="container tagline">
+        <div class="row">
+          {{ page.jumbotron }}
         </div>
       </div>
     </div>
-  </div>
-</div>
+  {% endblock %}
+{% endif %}
 
 {# Content Top #}
-<div role="content-top" class="container-fluid content-top">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>Courses</h2>
+{% if page.content_top %}
+  {% block content_top %}
+    <div role="content-top" class="container-fluid content-top">
+      <div class="container">
+        {{ page.content_top }}
       </div>
     </div>
-
-    <div class="row">
-      {# Tablets and above #}
-      <div class="hidden-xs">
-        <div class="col-sm-3"><a href="#"><img src="/itsweb-local/themes/itsweb/images/front_lg_apprenticeships.png" class="course_links_apprenticeships img-responsive" alt="Apprenticeships"></a></div>
-        <div class="col-sm-3"><a href="#"><img src="/itsweb-local/themes/itsweb/images/front_lg_traineeships.png" class="course_links_traineeships img-responsive" alt="Traineeships"></a></div>
-        <div class="col-sm-3"><a href="#"><img src="/itsweb-local/themes/itsweb/images/front_lg_bespoke.png" class="course_links_bespoke img-responsive" alt="Bespoke"></a></div>
-        <div class="col-sm-3"><a href="#"><img src="/itsweb-local/themes/itsweb/images/front_lg_automotive.png" class="course_links_automotive img-responsive" alt="Automotive"></a></div>
-      </div>
-
-      {# Phones only #}
-      <div class="visible-xs">
-        <div class="col-sm-3">
-          <div class="course-xs-fallback">
-            <a href="#" alt="Apprenticeships" title="Apprenticeships">Apprenticeships</a>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="course-xs-fallback">
-            <a href="#" alt="Traineeships" title="Traineeships">Traineeships</a>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="course-xs-fallback">
-            <a href="#" alt="Bespoke" title="Bespoke">Bespoke</a>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="course-xs-fallback">
-            <a href="#" alt="Automotive" title="Automotive">Automotive</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
+  {% endblock %}
+{% endif %}
 
 {# Career Test #}
 <div class="container-fluid career-test">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12"><a href="#">Take our free careers test</a></div>
+      <div class="col-sm-12">
+        <a class="hidden-xs ctestlg" href="#">Take our free careers test</a>
+        <a class="visible-xs ctestsm" href="#">Take our free careers test</a>
+      </div>
     </div>
   </div>
 </div>
 
 {# Content Bottom #}
-<div role="content-bottom" class="container-fluid content-bottom">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>Education Partners</h2>
+{% if page.content_bottom %}
+  {% block content_bottom %}
+    <div role="content-bottom" class="container-fluid content-bottom">
+      <div class="container">
+        {{ page.content_bottom }}
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="edu-partners">
-          <a href="#"><img src="/itsweb-local/themes/itsweb/images/ep_bfc.png" class="img-responsive" alt="Blackpool and The Fylde College" title="Blackpool and The Fylde College"></a>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="edu-partners">
-          <a href="#"><img src="/itsweb-local/themes/itsweb/images/ep_ehq.png" class="img-responsive" alt="Lancashire Energy HQ" title="Lancashire Energy HQ"></a>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="edu-partners">
-          <a href="#"><img src="/itsweb-local/themes/itsweb/images/ep_ncoog.png" class="img-responsive" alt="NCOOG" title="NCOOG"></a>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="edu-partners">
-          <a href="#"><img src="/itsweb-local/themes/itsweb/images/ep_lanu.png" class="img-responsive" alt="Lancaster University" title="Lancaster University"></a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
+  {% endblock %}
+{% endif %}
 
 {# Page Closure #}
-<div role="content-bottom" class="container-fluid page-closure">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>Industry Partners</h2>
+{% if page.page_closure %}
+  {% block page_closure %}
+    <div role="content-bottom" class="container-fluid page-closure">
+      <div class="container">
+        {{ page.page_closure }}
       </div>
     </div>
+  {% endblock %}
+{% endif %}
 
-    <div class="row">
-      <div class="col-sm-3 col-sm-offset-3">
-        <div class="ind-partners">
-          <a href="#"><img src="/itsweb-local/themes/itsweb/images/ip_cgrp.png" class="img-responsive" alt="Chorley Group" title="Chorley Group"></a>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="ind-partners">
-          <a href="#"><img src="/itsweb-local/themes/itsweb/images/ip_dbis.png" class="img-responsive" alt="Dept. Business, Innovation and Skills" title="Dept. Business, Innovation and Skills"></a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
+{# Footer #}
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
@@ -267,11 +187,17 @@
           </div>
         </div>
       </div>
-
-      <div class="tandc">
-        <p><a href="#">Terms and Conditions</a></p>
-      </div>
-
     </footer>
+  {% endblock %}
+{% endif %}
+
+{# Terms and Conditions #}
+{% if page.tandc %}
+  {% block tandc %}
+  <div class="container-fluid tandc">
+    <div class="row">
+      {{ page.tandc }}
+    </div>
+  </div>
   {% endblock %}
 {% endif %}
