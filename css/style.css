@@ -1,16 +1,27 @@
+@font-face{
+  font-family: roboto_regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+  font-family: roboto_bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
 /*
-Yellow - #ebe225
-Purple - #3f2682
+=========================================================================
+Global
+=========================================================================
 */
 
 body{
   margin-top:0px;
+  font-size: 12px;
 }
 
-.navbar{
-  border-radius: 0px;
-  border:none;
-  margin-bottom: 0px;
+img.yellow-bar{
+  width:66px;
+  margin: 0 auto;
 }
 
 a.logo{
@@ -22,14 +33,62 @@ a.navbar-brand{
   display:none;
 }
 
-header.navbar{
+/*
+=========================================================================
+Navbar
+=========================================================================
+*/
+
+.navbar{
+  margin:0px;
+}
+
+.navbar-default{
+  background: #ebe255;
+  border: none;
+  height:216px;
+}
+
+.navbar-header{
+  height:216px;
+}
+
+.navbar-default .navbar-nav{
+  /*left:100px;*/
+}
+
+.navbar-default .navbar-nav > li{
+  margin: 104px 0px 0px 0px;
+}
+
+.navbar-default .navbar-nav > li > a:link{
+  font-family: roboto_bold, sans-serif;
+  text-transform: uppercase;
+  color: #3f2682;
+  padding: 8px 13px;
+}
+
+.navbar-default .navbar-nav > li > a:visited{ color: #3f2682; }
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: #fff;
+  text-decoration: none;
+  background: #3f2682;
+}
+
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus{
+  text-decoration: underline;
+}
+
+
+/*header.navbar{
   background:#ebe255;
   height:216px;
 }
 
+
 nav#block-itsweb-main-menu ul.navbar-nav{
-  top:90px;
-  left:100px;
   position: relative;
 }
 
@@ -51,24 +110,317 @@ nav#block-itsweb-main-menu ul.navbar-nav li a:hover,
 nav#block-itsweb-main-menu ul.navbar-nav li a:active{
   color:#fff;
   background-color: #3f2682;
+}*/
+
+/* Collapsable Nav */
+
+.navbar-toggle{
+  margin-top: 80px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  border-radius: 0px;
 }
 
-/* Jumbotron */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+  background: #3f2682;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar{
+  background: #EBE255;
+}
+
+.navbar-default .navbar-toggle{
+  border: 1px solid #3f2682;
+}
+
+@media (max-width: 991px) {
+
+  /* Show toggle menu */
+  .navbar-header { float: none; }
+  .navbar-toggle { display: inline-block; }
+
+  /* Remove desktop menu */
+  .navbar-collapse.collapse { display: none !important; }
+
+  /* Stack li elements */
+  .navbar-nav > li { float: none; }
+
+  /* Remove float for full width and set margin */
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+
+  /* Set display and overflow for dropdown */
+  .navbar-collapse.collapse.in { display: block !important; }
+  .collapsing { overflow: hidden !important; }
+
+  /* Styles for for drop down toggle menu */
+  .navbar-default .navbar-collapse{
+    background: #EBE255;
+    position: relative;
+    z-index: 9999;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top: 0px;
+  }
+
+  .navbar-default .navbar-collapse.collapsing .navbar-nav ul,
+  .navbar-default .navbar-collapse.in .navbar-nav ul{
+    margin: 0px 0px 0px 0px;
+  }
+
+  .navbar-default .navbar-collapse.collapsing .navbar-nav li,
+  .navbar-default .navbar-collapse.in .navbar-nav li{
+    margin: 0px 0px 0px 0px;
+    border-top: 1px solid #8a8a8a;
+  }
+
+  nav#block-itsweb-main-menu ul.navbar-nav li { margin: 0px; }
+  .navbar-nav { margin: 0px; }
+  .navbar-collapse.in { overflow-y: hidden; }
+
+}
+
+/*@media (min-width: 768px){
+  .navbar-nav {
+      float: none;
+      margin: 0;
+  }
+}*/
+
+/*
+=========================================================================
+Search Header
+=========================================================================
+*/
+
+#search_header{
+  height: 83px;
+}
+
+/*
+=========================================================================
+Jumbotron
+=========================================================================
+*/
 
 .jumbotron {
-  background-size: cover;
-  background-position: center;
-  margin: 0px 0px 0px 0px;
+  position: relative;
   width: 100%;
   height: 700px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.jumbotron.home {
-  background: url("../images/home_jtron.jpg") no-repeat center top;
-  background-size: cover;
+.jumbotron .tagline{
+  position: relative;
+  top: 150px;
 }
 
 .jumbotron h1{
+  text-align: center;
+  font-size: 1.95em;
+  color: #fff;
+  font-weight: 700;
+  font-family: roboto_bold, sans-serif;
   text-transform: uppercase;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.jumbotron h3{
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 500;
+  font-family: roboto_regular, sans-serif;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.jumbotron .fom-wrap{
+  width: 138px;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron a.fom{
+  border:3px solid #3F2683;
+  background: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.jumbotron a.fom:hover{
+  color: #EBE255;
+  background: #3F2683;
+}
+
+/*
+=========================================================================
+Content-Top
+=========================================================================
+*/
+
+.content-top{
+  background: #3F2683;
+  margin: 0px 0px 0px 0px;
+  color: #fff;
+  min-height: 100%;
+  border-top: 1px solid #523a8d;
+  border-bottom: 1px solid #523a8d;
+  padding:40px 0px 50px 0px;
+}
+
+.content-top h2{
+  background: #EBE255;
+  color: #3F2683;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
+}
+
+
+/*
+=========================================================================
+Content-Bottom
+=========================================================================
+*/
+
+.content-bottom{
+  background: #fff;
+  margin: 0px 0px 0px 0px;
+  min-height: 100%;
+  padding:40px 0px 50px 0px;
+}
+
+.content-bottom h2{
+  background: #3F2683;
+  color: #EBE255;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
+}
+
+/*
+=========================================================================
+Page Closure
+=========================================================================
+*/
+
+.page-closure{
+  background: #3F2683;
+  margin: 0px 0px 0px 0px;
+  min-height: 100%;
+  padding:40px 0px 50px 0px;
   color:#fff;
 }
+
+.page-closure h2{
+  background: #EBE255;
+  color: #3F2683;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
+}
+
+/*
+=========================================================================
+Footer
+=========================================================================
+*/
+
+footer.footer{
+  background: #fff;
+  margin: 0px;
+  padding:40px 0px 0px 0px;
+  border:none;
+}
+
+footer.footer h2.block-title{
+  background: #3F2683;
+  color: #EBE255;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
+}
+
+footer.footer .region-footer p{
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+  color:#777;
+  font-size: 2em;
+}
+
+footer.footer .region-footer a{ color:#777; }
+footer.footer .region-footer a:hover{
+  color:#3F2683;
+  text-decoration: none;
+}
+
+footer.footer .region-footer .glyphicon-earphone,
+footer.footer .region-footer .glyphicon-envelope{
+  font-size: 1.5em;
+  color:#3f2683;
+}
+
+footer.footer .tandc{
+  height:100%;
+  margin:20px 0px 0px 0px;
+  background:#747474;
+}
+
+footer.footer .tandc a{
+  text-align: center;
+  color:#fff;
+  padding:20px 0px 20px 0px;
+  display: block;
+}
+
+footer.footer .region-footer #its_social{
+  width:148px;
+  height:64px;
+  margin:0 auto;
+  margin:25px auto 25px auto;
+}
+
+footer.footer .region-footer #its_social ul{
+  list-style-type: none;
+  background: red;
+  padding:0;
+}
+
+footer.footer .region-footer #its_social ul li:first-child{
+  margin-right: 20px;
+}
+
+footer.footer .region-footer #its_social ul li{
+  float:left;
+}
+
+footer.footer .region-footer #its_social ul li a{
+  text-indent: -9999px;
+  display: block;
+  width:64px;
+  height:64px;
+}
+
+footer.footer .region-footer #its_social ul li a.facebook{ background: url(../images/its_facebook.png) no-repeat; }
+footer.footer .region-footer #its_social ul li a.twitter{ background: url(../images/its_twitter.png) no-repeat; }
