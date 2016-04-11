@@ -220,7 +220,8 @@ Jumbotron
   top: 150px;
 }
 
-.jumbotron h1{
+.jumbotron h1,
+.page-breaker h1{
   text-align: center;
   font-size: 1.95em;
   color: #fff;
@@ -286,6 +287,16 @@ Content-Top
   text-align: center;
   display: table;
   margin: 0px auto 40px auto;
+}
+
+.page-breaker{
+  height:578px;
+  background: url("../images/hp_breaker.png") center center no-repeat;
+}
+
+.page-breaker h1{
+  position: relative;
+  top: 250px;
 }
 
 /*
