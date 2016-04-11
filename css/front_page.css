@@ -57,6 +57,7 @@ Career Test
   text-transform: uppercase;
   color: #3F2683;
   margin:65px auto 50px auto;
+  padding: 8px 20px;
   display: table;
   border: none;
   background: transparent;
@@ -69,6 +70,13 @@ Career Test
 
 .career-test a.ctestsm{
   font-size: 1.5em;
+}
+
+.career-test a.ctestlg:hover,
+.career-test a.ctestsm:hover{
+  background: #3F2683;
+  color: #EBE255;
+  text-decoration: none;
 }
 
 /*
