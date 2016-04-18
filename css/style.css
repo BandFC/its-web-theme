@@ -30,22 +30,49 @@ img.yellow-bar{
   text-indent: -9999px;
 }
 
-.affix-top a.logo{
-  background: url("../images/logo_affix_top.png") no-repeat;
-  margin:45px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
-  width:361px;
-  height:123px;
+
+@media (max-width: 768px) {
+
+  .affix-top a.logo{
+    background: url("../images/logo_xs_screens.png") no-repeat;
+    margin:45px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
+    width:123px;
+    height:123px;
+  }
+
+  .affix a.logo{
+    background: url("../images/logo_affix.png") no-repeat;
+    margin:10px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
+    width:65px;
+    height:65px;
+  }
+
+  a.navbar-brand{
+    display:none;
+  }
+
 }
 
-.affix a.logo{
-  background: url("../images/logo_affix.png") no-repeat;
-  margin:10px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
-  width:65px;
-  height:65px;
-}
+@media (min-width: 769px) {
 
-a.navbar-brand{
-  display:none;
+  .affix-top a.logo{
+    background: url("../images/logo_affix_top.png") no-repeat;
+    margin:45px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
+    width:361px;
+    height:123px;
+  }
+
+  .affix a.logo{
+    background: url("../images/logo_affix.png") no-repeat;
+    margin:10px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
+    width:65px;
+    height:65px;
+  }
+
+  a.navbar-brand{
+    display:none;
+  }
+
 }
 
 
