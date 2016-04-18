@@ -24,9 +24,24 @@ img.yellow-bar{
   margin: 20px auto;
 }
 
-a.logo{
-  /* 8px margin-top is assigned to navbar-btn */
-  margin:37px 0px 0px 0px;
+.affix-top a.logo,
+.affix a.logo{
+  display: block;
+  text-indent: -9999px;
+}
+
+.affix-top a.logo{
+  background: url("../images/logo_affix_top.png") no-repeat;
+  margin:45px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
+  width:361px;
+  height:123px;
+}
+
+.affix a.logo{
+  background: url("../images/logo_affix.png") no-repeat;
+  margin:10px 0px 0px 15px; /* 8px margin-top is assigned to navbar-btn */
+  width:65px;
+  height:65px;
 }
 
 a.navbar-brand{
@@ -44,94 +59,87 @@ Navbar
   margin:0px;
 }
 
-.navbar-default{
+.navbar-default.affix-top,
+.navbar-default.affix{
   background: #ebe255;
   border: none;
-  height:216px;
+  -webkit-transition: height ease 0.15s;
+  -moz-transition: height ease 0.15s;
+  -o-transition: height ease 0.15s;
+  transition: height ease 0.15s;
 }
 
-.navbar-header{
-  height:216px;
-}
+.navbar-default.affix-top .navbar-header{ height: 216px; }
+.navbar-default.affix .navbar-header{ height: 85px; }
 
-.navbar-default .navbar-nav{
-  /*left:100px;*/
-}
+.navbar-default.affix-top{ height:216px; }
+.navbar-default.affix{ height:85px; }
 
-.navbar-default .navbar-nav > li{
+.navbar-default.affix-top .navbar-nav > li{
   margin: 104px 0px 0px 0px;
 }
 
-.navbar-default .navbar-nav > li > a:link{
+.navbar-default.affix .navbar-nav > li{
+  margin: 27px 0px 0px 0px;
+}
+
+.navbar-default.affix-top .navbar-nav > li > a:link,
+.navbar-default.affix .navbar-nav > li > a:link{
   font-family: roboto_bold, sans-serif;
   text-transform: uppercase;
   color: #3f2682;
   padding: 8px 13px;
 }
 
-.navbar-default .navbar-nav > li > a:visited{ color: #3f2682; }
+.navbar-default.affix-top .navbar-nav > li > a:visited{ color: #3f2682; }
+.navbar-default.affix .navbar-nav > li > a:visited{ color: #3f2682; }
 
-.navbar-default .navbar-nav > li > a:hover{
+.navbar-default.affix-top .navbar-nav > li > a:hover,
+.navbar-default.affix .navbar-nav > li > a:hover{
   color: #fff;
   text-decoration: none;
   background: #3f2682;
 }
 
-.navbar-default .navbar-nav > li > a:active,
-.navbar-default .navbar-nav > li > a:focus{
+.navbar-default.affix-top .navbar-nav > li > a:active,
+.navbar-default.affix-top .navbar-nav > li > a:focus,
+.navbar-default.affix .navbar-nav > li > a:active,
+.navbar-default.affix .navbar-nav > li > a:focus{
   text-decoration: underline;
 }
-
-
-/*header.navbar{
-  background:#ebe255;
-  height:216px;
-}
-
-nav#block-itsweb-main-menu ul.navbar-nav{
-  position: relative;
-}
-
-nav#block-itsweb-main-menu ul.navbar-nav li{
-  margin:0px 3px 0px 3px;
-}
-
-nav#block-itsweb-main-menu ul.navbar-nav li a:link{
-  color:#3f2682;
-  text-transform:uppercase;
-}
-
-nav#block-itsweb-main-menu ul.navbar-nav li a:visited{
-  text-decoration: underline;
-  color:#3f2682;
-}
-
-nav#block-itsweb-main-menu ul.navbar-nav li a:hover,
-nav#block-itsweb-main-menu ul.navbar-nav li a:active{
-  color:#fff;
-  background-color: #3f2682;
-}*/
 
 /* Collapsable Nav */
 
-.navbar-toggle{
+.navbar-default.affix-top .navbar-toggle{
   margin-top: 80px;
   margin-right: 15px;
   margin-bottom: 8px;
   border-radius: 0px;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus{
+.navbar-default.affix .navbar-toggle{
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  border-radius: 0px;
+}
+
+.navbar-default.affix-top .navbar-toggle:hover,
+.navbar-default.affix-top .navbar-toggle:focus,
+.navbar-default.affix .navbar-toggle:hover,
+.navbar-default.affix .navbar-toggle:focus{
   background: #3f2682;
 }
 
-.navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar{
+.navbar-default.affix-top .navbar-toggle:hover .icon-bar,
+.navbar-default.affix-top .navbar-toggle:focus .icon-bar,
+.navbar-default.affix .navbar-toggle:hover .icon-bar,
+.navbar-default.affix .navbar-toggle:focus .icon-bar{
   background: #EBE255;
 }
 
-.navbar-default .navbar-toggle{
+.navbar-default.affix-top .navbar-toggle,
+.navbar-default.affix .navbar-toggle{
   border: 1px solid #3f2682;
 }
 
@@ -183,13 +191,6 @@ nav#block-itsweb-main-menu ul.navbar-nav li a:active{
   .navbar-collapse.in { overflow-y: hidden; }
 
 }
-
-/*@media (min-width: 768px){
-  .navbar-nav {
-      float: none;
-      margin: 0;
-  }
-}*/
 
 /*
 =========================================================================

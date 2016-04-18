@@ -17,21 +17,18 @@
 #}
 
 {% block content %}
+
   {% if site_logo %}
-
-    <a class="logo navbar-btn pull-left hidden-xs" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
-      <img class="img-responsive" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
-    </a>
-
-    <a class="logo navbar-btn pull-left visible-xs" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
-      <img class="img-responsive" src="/itsweb-local/themes/itsweb/images/logo_xs.png" alt="{{ 'Home'|t }}" />
-    </a>
-
+    <!--<a class="logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home"><img class="img-responsive" src="{{ site_logo }}" alt="{{ 'Home'|t }}" /></a>-->
+    <a class="logo navbar-btn pull-left" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home"><img class="img-responsive" alt="{{ 'Home'|t }}" /></a>
   {% endif %}
+
   {% if site_name %}
     <a class="name navbar-brand" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
   {% endif %}
+
   {% if site_slogan %}
     <p class="navbar-text">{{ site_slogan }}</p>
   {% endif %}
+
 {% endblock %}
