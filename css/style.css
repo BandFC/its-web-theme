@@ -548,8 +548,13 @@ footer.footer .region-footer #its_social ul li a{
   height:64px;
 }
 
-footer.footer .region-footer #its_social ul li a.facebook{ background: url(../images/its_facebook.png) no-repeat; }
-footer.footer .region-footer #its_social ul li a.twitter{ background: url(../images/its_twitter.png) no-repeat; }
+footer.footer .region-footer #its_social ul li a.facebook{ background: url(../images/its_facebook.png) 0px -64px no-repeat; }
+footer.footer .region-footer #its_social ul li a.twitter{ background: url(../images/its_twitter.png) 0px -64px no-repeat; }
+
+footer.footer .region-footer #its_social ul li a.facebook:hover,
+footer.footer .region-footer #its_social ul li a.twitter:hover{
+  background-position: 0px 0px;
+}
 
 /*
 =========================================================================
