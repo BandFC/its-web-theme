@@ -105,6 +105,7 @@
   {% endblock %}
 {% endif %}
 
+{# Main #}
 <div role="main" class="main-container">
 
   {# Search Header #}
@@ -123,7 +124,7 @@
   {# Jumbotron #}
   {% if page.jumbotron %}
     {% block jumbotron %}
-      <div role="Jumbotron" class="jumbotron home">
+      <div role="Jumbotron" class="jumbotron about">
         <div class="container tagline">
           <div class="row">
             {{ page.jumbotron }}
@@ -133,69 +134,64 @@
     {% endblock %}
   {% endif %}
 
-  {# Content Top #}
-  {% if page.content_top %}
-    {% block content_top %}
-      <div role="content-top" class="container-fluid content-top">
-        <div class="container">
-          {{ page.content_top }}
-        </div>
-      </div>
-    {% endblock %}
-  {% endif %}
-
-  {# Page Breaker #}
-  <div class="container-fluid page-breaker">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>Online Learning</h1>
-        </div>
+  {# Header (Top-bar) #}
+  {% if page.header %}
+    {% block header %}
+    <div id="header" class="container">
+      <div class="col-sm-12" role="heading">
+        {{ page.header }}
       </div>
     </div>
-  </div>
+    {% endblock %}
+  {% endif %}
 
-  {# Career Test #}
-  <div class="container-fluid career-test">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <a class="hidden-xs ctestlg" href="#">Take our free careers test</a>
-          <a class="visible-xs ctestsm" href="#">Take our free careers test</a>
-        </div>
-      </div>
+  <section class="container">
+    <div class="col-sm-12">
+
+      {# Highlighted #}
+      {% if page.highlighted %}
+        {% block highlighted %}
+          <div class="highlighted">{{ page.highlighted }}</div>
+        {% endblock %}
+      {% endif %}
+
+      {# Breadcrumbs #}
+      {% if breadcrumb %}
+        {% block breadcrumb %}
+          {{ breadcrumb }}
+        {% endblock %}
+      {% endif %}
+
+      {# Action Links #}
+      {% if action_links %}
+        {% block action_links %}
+          <ul class="action-links">{{ action_links }}</ul>
+        {% endblock %}
+      {% endif %}
+
+      {# Help #}
+      {% if page.help %}
+        {% block help %}
+          {{ page.help }}
+        {% endblock %}
+      {% endif %}
+
+      {# Content #}
+      {% block content %}
+        <a id="main-content"></a>
+        {{ page.content }}
+      {% endblock %}
+
     </div>
-  </div>
-
-  {# Content Bottom #}
-  {% if page.content_bottom %}
-    {% block content_bottom %}
-      <div role="content-bottom" class="container-fluid content-bottom">
-        <div class="container">
-          {{ page.content_bottom }}
-        </div>
-      </div>
-    {% endblock %}
-  {% endif %}
-
-  {# Page Closure #}
-  {% if page.page_closure %}
-    {% block page_closure %}
-      <div role="content-bottom" class="container-fluid page-closure">
-        <div class="container">
-          {{ page.page_closure }}
-        </div>
-      </div>
-    {% endblock %}
-  {% endif %}
+  </section>
 
 </div>
-{# end Main-Container #}
+{# end Main Container #}
 
 {# Footer #}
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+    <footer class="container-fluid footer" role="contentinfo">
       <div class="container">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">

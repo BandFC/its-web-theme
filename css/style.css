@@ -23,9 +23,45 @@ body.navbar-is-fixed-top{
   margin-top: 0px;
 }
 
-/*body.user-logged-in{
-  padding-top:40px !important;
-}*/
+@media (max-width: 768px) {
+
+  body .main-container{
+    padding-top:216px;
+  }
+
+  body.user-logged-in.toolbar-vertical .main-container{
+    padding-top:26px !important;
+  }
+
+  body.user-logged-in.toolbar-horizontal .main-container{
+    padding-top:26px;
+  }
+
+  body.user-logged-in.toolbar-tray-open .main-container{
+    padding-top:105px;
+  }
+
+}
+
+@media (min-width: 769px) {
+
+  body .main-container{
+    padding-top:216px;
+  }
+
+  body.user-logged-in.toolbar-vertical .main-container{
+    padding-top:65px !important;
+  }
+
+  body.user-logged-in.toolbar-horizontal .main-container{
+    padding-top:65px;
+  }
+
+  body.user-logged-in.toolbar-tray-open .main-container{
+    padding-top:105px;
+  }
+
+}
 
 img.yellow-bar{
   width:66px;
@@ -81,7 +117,6 @@ img.yellow-bar{
   }
 
 }
-
 
 /*
 =========================================================================
@@ -232,42 +267,23 @@ Navbar
 
 /*
 =========================================================================
-Search Header
+Main Container
 =========================================================================
 */
 
-@media (max-width: 768px) {
-
-  body #search_header{
-    height: 83px;
-    margin-top:216px;
-  }
-
-  body.user-logged-in #search_header{
-    height: 83px;
-    margin-top:27px;
-  }
-
+.region-header{
+  margin:10px 0px 0px 0px;
 }
 
-@media (min-width: 769px) {
-
-  body #search_header{
-    height: 83px;
-    margin-top:216px;
-  }
-
-  body.user-logged-in #search_header{
-    height: 83px;
-    margin-top:65px;
-  }
-
-  body.user-logged-in.toolbar-tray-open #search_header{
-    height:83px;
-    margin-top:105px;
-  }
-
+.page-header {
+  margin-top: 20px;
 }
+
+/*
+=========================================================================
+Search Header
+=========================================================================
+*/
 
 /*
 =========================================================================
@@ -275,121 +291,17 @@ Jumbotron
 =========================================================================
 */
 
-.jumbotron {
-  position: relative;
-  width: 100%;
-  height: 700px;
-  margin: 0px;
-  padding: 0px;
-}
-
-.jumbotron .tagline{
-  position: relative;
-  top: 150px;
-}
-
-.jumbotron h1,
-.page-breaker h1{
-  text-align: center;
-  font-size: 1.95em;
-  color: #fff;
-  font-weight: 700;
-  font-family: roboto_bold, sans-serif;
-  text-transform: uppercase;
-  line-height: 1.4;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-
-.jumbotron h3{
-  text-align: center;
-  font-size: 1.4em;
-  color: #fff;
-  font-weight: 500;
-  font-family: roboto_regular, sans-serif;
-  line-height: 1.4;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
-}
-
-.jumbotron .fom-wrap{
-  width: 138px;
-  display: block;
-  margin: 40px auto;
-}
-
-.jumbotron a.fom{
-  border:3px solid #3F2683;
-  background: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 600;
-  font-size: 0.95em;
-}
-
-.jumbotron a.fom:hover{
-  color: #EBE255;
-  background: #3F2683;
-}
-
 /*
 =========================================================================
 Content-Top
 =========================================================================
 */
 
-.content-top{
-  background: #3F2683;
-  margin: 0px 0px 0px 0px;
-  color: #fff;
-  min-height: 100%;
-  border-top: 1px solid #523a8d;
-  border-bottom: 1px solid #523a8d;
-  padding:40px 0px 50px 0px;
-}
-
-.content-top h2{
-  background: #EBE255;
-  color: #3F2683;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  padding: 7px 40px;
-  text-align: center;
-  display: table;
-  margin: 0px auto 40px auto;
-}
-
-.page-breaker{
-  height:578px;
-  background: url("../images/hp_breaker.png") center center no-repeat;
-}
-
-.page-breaker h1{
-  position: relative;
-  top: 250px;
-}
-
 /*
 =========================================================================
 Content-Bottom
 =========================================================================
 */
-
-.content-bottom{
-  background: #fff;
-  margin: 0px 0px 0px 0px;
-  min-height: 100%;
-  padding:40px 0px 50px 0px;
-}
-
-.content-bottom h2{
-  background: #3F2683;
-  color: #EBE255;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  padding: 7px 40px;
-  text-align: center;
-  display: table;
-  margin: 0px auto 40px auto;
-}
 
 /* Education + Industry Partner Thumbs */
 
@@ -488,25 +400,6 @@ Content-Bottom
 Page Closure
 =========================================================================
 */
-
-.page-closure{
-  background: #3F2683;
-  margin: 0px 0px 0px 0px;
-  min-height: 100%;
-  padding:40px 0px 50px 0px;
-  color:#fff;
-}
-
-.page-closure h2{
-  background: #EBE255;
-  color: #3F2683;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  padding: 7px 40px;
-  text-align: center;
-  display: table;
-  margin: 0px auto 40px auto;
-}
 
 /*
 =========================================================================
@@ -610,6 +503,7 @@ Terms and Conditions
 .tandc a{
   text-align: center;
   color:#fff;
-  padding:20px 0px 20px 0px;
-  display: block;
+  padding:20px;
+  margin:0px auto;
+  display: table;
 }

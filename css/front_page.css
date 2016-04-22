@@ -4,7 +4,62 @@ Jumbotron
 =========================================================================
 */
 
-.jumbotron.home {
+body.path-frontpage .jumbotron {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body.path-frontpage .jumbotron .tagline{
+  position: relative;
+  top: 150px;
+}
+
+body.path-frontpage .jumbotron h1,
+body.path-frontpage .page-breaker h1{
+  text-align: center;
+  font-size: 1.95em;
+  color: #fff;
+  font-weight: 700;
+  font-family: roboto_bold, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+body.path-frontpage .jumbotron h3{
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 500;
+  font-family: roboto_regular, sans-serif;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+body.path-frontpage .jumbotron .fom-wrap{
+  width: 138px;
+  display: block;
+  margin: 40px auto;
+}
+
+body.path-frontpage .jumbotron a.fom{
+  border:3px solid #3F2683;
+  background: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+body.path-frontpage .jumbotron a.fom:hover{
+  color: #EBE255;
+  background: #3F2683;
+}
+
+body.path-frontpage .jumbotron.home {
   background: url("../images/jtron_home.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -15,9 +70,40 @@ Content Top
 =========================================================================
 */
 
+body.path-frontpage .content-top{
+  background: #3F2683;
+  margin: 0px 0px 0px 0px;
+  color: #fff;
+  min-height: 100%;
+  border-top: 1px solid #523a8d;
+  border-bottom: 1px solid #523a8d;
+  padding:40px 0px 50px 0px;
+}
+
+body.path-frontpage .content-top h2{
+  background: #EBE255;
+  color: #3F2683;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
+}
+
+body.path-frontpage .page-breaker{
+  height:578px;
+  background: url("../images/hp_breaker.png") center center no-repeat;
+}
+
+body.path-frontpage .page-breaker h1{
+  position: relative;
+  top: 250px;
+}
+
 /* Fallback for course imagery on XS devices */
 
-div.course-xs-fallback{
+body.path-frontpage div.course-xs-fallback{
   min-width: 100%;
   min-height: 100%;
   height: auto;
@@ -25,7 +111,7 @@ div.course-xs-fallback{
   margin:0px 0px 10px 0px;
 }
 
-div.course-xs-fallback a{
+body.path-frontpage div.course-xs-fallback a{
   color: #3F2683;
   padding:30px 20px;
   display: block;
@@ -36,24 +122,44 @@ div.course-xs-fallback a{
   text-align: center;
 }
 
-div.course-xs-fallback a:hover{
+body.path-frontpage div.course-xs-fallback a:hover{
   color: #3F2683;
   background: #EBE255;
 }
 
 /*
 =========================================================================
-Career Test
+Content-Bottom
 =========================================================================
 */
 
-.career-test{
+body.path-frontpage .content-bottom{
+  background: #fff;
+  margin: 0px 0px 0px 0px;
+  min-height: 100%;
+  padding:40px 0px 50px 0px;
+}
+
+body.path-frontpage .content-bottom h2{
+  background: #3F2683;
+  color: #EBE255;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
+}
+
+/* Career Test */
+
+body.path-frontpage .career-test{
   height:100%;
   background: #EBE255;
 }
 
-.career-test a.ctestlg,
-.career-test a.ctestsm{
+body.path-frontpage .career-test a.ctestlg,
+body.path-frontpage .career-test a.ctestsm{
   text-transform: uppercase;
   color: #3F2683;
   margin:65px auto 50px auto;
@@ -64,16 +170,16 @@ Career Test
   text-align: center;
 }
 
-.career-test a.ctestlg{
+body.path-frontpage .career-test a.ctestlg{
   font-size: 2.5em;
 }
 
-.career-test a.ctestsm{
+body.path-frontpage .career-test a.ctestsm{
   font-size: 1.5em;
 }
 
-.career-test a.ctestlg:hover,
-.career-test a.ctestsm:hover{
+body.path-frontpage .career-test a.ctestlg:hover,
+body.path-frontpage .career-test a.ctestsm:hover{
   background: #3F2683;
   color: #EBE255;
   text-decoration: none;
@@ -84,6 +190,26 @@ Career Test
 Content Bottom
 =========================================================================
 */
+
+body.path-frontpage .page-closure{
+  background: #3F2683;
+  margin: 0px 0px 0px 0px;
+  min-height: 100%;
+  padding:40px 0px 50px 0px;
+  color:#fff;
+}
+
+body.path-frontpage .page-closure h2{
+  background: #EBE255;
+  color: #3F2683;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
+}
+
 
 div.edu-partners{
   min-width: 100%;

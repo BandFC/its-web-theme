@@ -3,6 +3,7 @@ global-styling:
     theme:
       css/style.css: {}
       css/front_page.css: {}
+      css/pages.css: {}
       css/animate.css: {}
   js:
     js/wow.min.js: {}
