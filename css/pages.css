@@ -14,13 +14,12 @@ body.path-node.page-node-type-page .jumbotron {
 
 body.path-node.page-node-type-page .jumbotron .tagline{
   position: relative;
-  top: 150px;
+  top: 270px;
 }
 
-body.path-node.page-node-type-page .jumbotron h1,
-body.path-node.page-node-type-page .page-breaker h1{
+body.path-node.page-node-type-page .jumbotron h1{
   text-align: center;
-  font-size: 1.95em;
+  font-size: 3em;
   color: #fff;
   font-weight: 700;
   font-family: roboto_bold, sans-serif;
@@ -124,6 +123,10 @@ body.path-node.page-node-type-page .main-container section .region-content .fiel
   margin: 20px 0px 20px 0px;
 }
 
+body.path-node.page-node-type-page .main-container section .region-content .field--name-body{
+  text-align: center;
+}
+
 body.path-node.page-node-type-page .main-container section .region-content .field--name-body a{
   color: #3F2682;
   text-align: center;
@@ -156,5 +159,5 @@ body.path-node.page-node-type-page .main-container .region-content .field--name-
   font-size: 0;
   border: 0;
   width:60%;
-  margin: 60px auto;
+  margin: 50px auto 20px auto;
 }
