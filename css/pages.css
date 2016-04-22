@@ -39,22 +39,22 @@ body.path-node.page-node-type-page .jumbotron h3{
 }
 
 .jumbotron.about {
-  background: url("../images/jtron_home.jpg") center center no-repeat;
+  background: url("../images/jtron_edu.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .jumbotron.education {
-  background: url("../images/jtron_home.jpg") center center no-repeat;
+  background: url("../images/jtron_edu.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .jumbotron.industry {
-  background: url("../images/jtron_home.jpg") center center no-repeat;
+  background: url("../images/jtron_edu.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .jumbotron.press {
-  background: url("../images/jtron_home.jpg") center center no-repeat;
+  background: url("../images/jtron_edu.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -107,7 +107,8 @@ body.path-node.page-node-type-page .main-container section .region-content .fiel
   line-height: 1.75;
 }
 
-body.path-node.page-node-type-page .main-container section .region-content .field--name-body ul li{
+body.path-node.page-node-type-page .main-container section .region-content .field--name-body ul li,
+body.path-node.page-node-type-page .main-container section .region-content .field--name-body ol li{
   list-style-position: inside;
   text-align: center;
   margin: 10px 0px 10px 0px;
@@ -129,18 +130,8 @@ body.path-node.page-node-type-page .main-container section .region-content .fiel
 
 body.path-node.page-node-type-page .main-container section .region-content .field--name-body a{
   color: #3F2682;
-  text-align: center;
-  display: table;
   font-size: 18px;
   line-height: 1.75;
-  margin: 15px auto 15px auto;
-  padding: 5px 10px 3px 10px;
-}
-
-body.path-node.page-node-type-page .main-container section .region-content .field--name-body a:hover{
-  background: #EBE255;
-  color: #3F2682;
-  text-decoration: none;
 }
 
 body.path-node.page-node-type-page .main-container .region-content .field--name-body blockquote{
