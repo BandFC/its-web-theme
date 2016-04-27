@@ -1,30 +1,38 @@
 <div id="course-instance">
-
   <div class="row">
 
       <div class="col-sm-4 hidden-xs">
-        <img class="img-responsive" src="/themes/itsweb/images/course-img-default.png">
+        <img class="img-responsive" src="/itsweb-local/themes/itsweb/images/course-img-default.png">
       </div>
 
       <div class="col-sm-8 col-xs-12">
 
-        {{ content.field_market_area }}
+        {% if content.field_market_area %}
+          {{ content.field_market_area }}
+        {% endif %}
 
         <div class="node-title">{{ node.label }}</div>
 
-        {{ content.field_course_code }}
+        {% if content.field_course_code %}
+          {{ content.field_course_code }}
+        {% endif %}
 
-        <h2>What will I study?</h2>
-        {{ content.field_about_course }}
+        {% if content.field_about_course %}
+          <h2>What will I study?</h2>
+          {{ content.field_about_course }}
+        {% endif %}
 
-        <h2>What next?</h2>
-        {{ content.field_career_progression }}
+        {% if content.field_career_progression %}
+          <h2>What next?</h2>
+          {{ content.field_career_progression }}
+        {% endif %}
 
-        <h2>Entry requirements</h2>
-        {{ content.field_entry_requirements }}
+        {% if content.field_entry_requirements %}
+          <h2>Entry requirements</h2>
+          {{ content.field_entry_requirements }}
+        {% endif %}
 
       </div>
 
   </div>
-
 </div>
