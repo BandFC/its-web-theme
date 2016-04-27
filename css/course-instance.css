@@ -1,0 +1,71 @@
+body.page-node-type-course-instance .page-header{
+  display:none;
+}
+
+body.page-node-type-course-instance .region-header{
+  background: #fff;
+}
+
+body.page-node-type-course-instance .main-container{
+  background: linear-gradient(to bottom, #3F2683 0%, #3F2683 50%, #3F2683 62%, white 62%, white 100%); /* W3C */
+}
+
+body.page-node-type-course-instance #course-instance{
+  margin-top: 20px;
+}
+
+body.page-node-type-course-instance #course-instance .col-sm-8{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+}
+
+body.page-node-type-course-instance #course-instance .field--name-field-market-area{
+  text-transform: uppercase;
+  color: #747474;
+  font-size: 18px;
+}
+
+body.page-node-type-course-instance #course-instance .node-title{
+  text-transform: uppercase;
+  color: #3F2683;
+  font-size: 24px;
+  font-family: roboto_bold, sans-serif;
+}
+
+body.page-node-type-course-instance #course-instance .field--name-field-course-code:before{
+  content: "Course Code: ";
+}
+
+body.page-node-type-course-instance #course-instance .field--name-field-course-code{
+  color: #747474;
+}
+
+body.page-node-type-course-instance #course-instance h2{
+  color: #3F2683;
+  font-size: 18px;
+}
+
+body.page-node-type-course-instance #course-instance .field--name-field-about-course,
+body.page-node-type-course-instance #course-instance .field--name-field-career-progression,
+body.page-node-type-course-instance #course-instance .field--name-field-entry-requirements{
+  color: #747474;
+}
+
+/*
+=========================================================================
+Footer
+=========================================================================
+*/
+
+footer.footer h2{
+  background: #3F2683;
+  color: #EBE255;
+  font-size: 1.75em;
+  font-family: roboto_bold, sans-serif;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: block;
+  margin: 0px auto 40px auto;
+}

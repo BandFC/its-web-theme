@@ -88,6 +88,7 @@ body.path-frontpage .content-top h2{
   padding: 7px 40px;
   text-align: center;
   display: table;
+  font-family: roboto_bold, sans-serif;
   margin: 0px auto 40px auto;
 }
 
@@ -148,6 +149,7 @@ body.path-frontpage .content-bottom h2{
   padding: 7px 40px;
   text-align: center;
   display: table;
+  font-family: roboto_bold, sans-serif;
   margin: 0px auto 40px auto;
 }
 
@@ -207,6 +209,7 @@ body.path-frontpage .page-closure h2{
   padding: 7px 40px;
   text-align: center;
   display: table;
+  font-family: roboto_bold, sans-serif;
   margin: 0px auto 40px auto;
 }
 
@@ -259,4 +262,22 @@ div.ind-partners a{
 
 div.ind-partners .img-responsive{
   display: inline-block;
+}
+
+/*
+=========================================================================
+Footer
+=========================================================================
+*/
+
+body.path-frontpage footer.footer h2{
+  background: #3F2683;
+  color: #EBE255;
+  font-size: 1.75em;
+  font-family: roboto_bold, sans-serif;
+  text-transform: uppercase;
+  padding: 7px 40px;
+  text-align: center;
+  display: table;
+  margin: 0px auto 40px auto;
 }

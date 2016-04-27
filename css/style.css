@@ -172,6 +172,12 @@ Navbar
   color: #fff;
   text-decoration: none;
   background: #3f2682;
+  /* Transition */
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  o-transition: all ease 0.4s;
+  -ms-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 
 .navbar-default.affix-top .navbar-nav > li > a:active,
@@ -284,6 +290,10 @@ Main Container
 Search Header
 =========================================================================
 */
+
+#search_header{
+  background: #fff;
+}
 
 /*
 =========================================================================
@@ -414,15 +424,10 @@ footer.footer{
   border:none;
 }
 
-footer.footer h2{
-  background: #3F2683;
-  color: #EBE255;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  padding: 7px 40px;
-  text-align: center;
-  display: table;
-  margin: 0px auto 40px auto;
+footer.footer .col-sm-12,
+footer.footer .row{
+  padding:0px;
+  margin:0px;
 }
 
 footer.footer .region-footer p{
@@ -437,7 +442,6 @@ footer.footer .region-footer a:hover{
   color:#3F2683;
   text-decoration: none;
 }
-
 
 footer.footer .region-footer a.emailaddsm{ font-size: 0.75em}
 

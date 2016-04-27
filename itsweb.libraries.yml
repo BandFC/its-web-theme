@@ -4,6 +4,7 @@ global-styling:
       css/style.css: {}
       css/front_page.css: {}
       css/pages.css: {}
+      css/course-instance.css: {}
       css/animate.css: {}
   js:
     js/wow.min.js: {}
