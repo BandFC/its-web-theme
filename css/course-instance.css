@@ -60,6 +60,53 @@ body.page-node-type-course-instance #course-instance ul li{
   line-height: 20px;
 }
 
+/* Course Content Tags - User Generated Content */
+
+body.page-node-type-course-instance #course-instance h1{
+  color: #3F2683;
+  font-size: 18px;
+}
+
+body.page-node-type-course-instance #course-instance h2{
+  color: #8f73d5;
+  font-size: 16px;
+}
+
+body.page-node-type-course-instance #course-instance h3{
+  color: #3F2683;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+body.page-node-type-course-instance #course-instance h4,
+body.page-node-type-course-instance #course-instance h5{
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+body.page-node-type-course-instance #course-instance table{
+  width:100%;
+}
+
+body.page-node-type-course-instance #course-instance table thead{
+  border-bottom: 1px solid #3F2683;
+}
+
+body.page-node-type-course-instance #course-instance table thead th,
+body.page-node-type-course-instance #course-instance table tbody td,
+body.page-node-type-course-instance #course-instance table tfoot td{
+  padding: 10px 5px 10px 0px;
+}
+
+body.page-node-type-course-instance #course-instance table tbody tr:nth-child(odd){
+  background: #ebebeb;
+}
+
+body.page-node-type-course-instance #course-instance table tfoot{
+  border-top: 1px solid #8f73d5;
+}
+
 /*
 =========================================================================
 Footer
