@@ -18,11 +18,9 @@
           <h4 class="course-code">{{ node.field_course_code.value|t }}</h4>
         {% endif %}
 
-{# Edit this field - course overview #}
-
-        {% if node.field_course_overiew.value %}
+        {% if node.field_course_overview.value %}
           <h2 class="overview">Course Overview</h2>
-          {{ node.field_course_overiew.value|t }}
+          {{ node.field_course_overview.value|t }}
         {% endif %}
 
         {% if node.field_about_course.value %}
