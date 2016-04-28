@@ -20,12 +20,6 @@ body.page-node-type-course-instance #course-instance .col-sm-8{
   background: #fff;
 }
 
-body.page-node-type-course-instance #course-instance .field--name-field-market-area{
-  text-transform: uppercase;
-  color: #747474;
-  font-size: 18px;
-}
-
 body.page-node-type-course-instance #course-instance .node-title{
   text-transform: uppercase;
   color: #3F2683;
@@ -33,23 +27,32 @@ body.page-node-type-course-instance #course-instance .node-title{
   font-family: roboto_bold, sans-serif;
 }
 
-body.page-node-type-course-instance #course-instance .field--name-field-course-code:before{
-  content: "Course Code: ";
-}
-
-body.page-node-type-course-instance #course-instance .field--name-field-course-code{
-  color: #747474;
-}
-
-body.page-node-type-course-instance #course-instance h2{
+body.page-node-type-course-instance #course-instance h2.overview,
+body.page-node-type-course-instance #course-instance h2.about,
+body.page-node-type-course-instance #course-instance h2.progression,
+body.page-node-type-course-instance #course-instance h2.require{
   color: #3F2683;
   font-size: 18px;
 }
 
-body.page-node-type-course-instance #course-instance .field--name-field-about-course,
-body.page-node-type-course-instance #course-instance .field--name-field-career-progression,
-body.page-node-type-course-instance #course-instance .field--name-field-entry-requirements{
+body.page-node-type-course-instance #course-instance h3.market-area{
+  text-transform: uppercase;
   color: #747474;
+  font-size: 18px;
+}
+
+body.page-node-type-course-instance #course-instance h4.course-code:before{
+  content: "Course Code: ";
+}
+
+body.page-node-type-course-instance #course-instance h4.course-code{
+  color: #747474;
+  font-size: 1em;
+}
+
+body.page-node-type-course-instance #course-instance p{
+  color: #747474;
+  line-height: 20px;
 }
 
 /*

@@ -1,3 +1,4 @@
+
 <div id="course-instance">
   <div class="row">
 
@@ -7,29 +8,36 @@
 
       <div class="col-sm-8 col-xs-12">
 
-        {% if content.field_market_area %}
-          {{ content.field_market_area }}
+        {% if node.field_market_area.value %}
+          <h3 class="market-area">{{ node.field_market_area.value|t }}</h3>
         {% endif %}
 
-        <div class="node-title">{{ node.label }}</div>
+        <div class="node-title">{{ node.title.value }}</div>
 
-        {% if content.field_course_code %}
-          {{ content.field_course_code }}
+        {% if node.field_course_code.value %}
+          <h4 class="course-code">{{ node.field_course_code.value|t }}</h4>
         {% endif %}
 
-        {% if content.field_about_course %}
-          <h2>What will I study?</h2>
-          {{ content.field_about_course }}
+{# Edit this field - course overview #}
+
+        {% if node.field_course_overiew.value %}
+          <h2 class="overview">Course Overview</h2>
+          {{ node.field_course_overiew.value|t }}
         {% endif %}
 
-        {% if content.field_career_progression %}
-          <h2>What next?</h2>
-          {{ content.field_career_progression }}
+        {% if node.field_about_course.value %}
+          <h2 class="about">About Course</h2>
+          {{ node.field_about_course.value|t }}
         {% endif %}
 
-        {% if content.field_entry_requirements %}
-          <h2>Entry requirements</h2>
-          {{ content.field_entry_requirements }}
+        {% if node.field_career_progression.value %}
+          <h2 class="progression">Career Options and Progression</h2>
+          {{ node.field_career_progression.value|t }}
+        {% endif %}
+
+        {% if node.field_entry_requirements.value %}
+          <h2 class="require">Entry Requirements</h2>
+          {{ node.field_entry_requirements.value|t }}
         {% endif %}
 
       </div>
