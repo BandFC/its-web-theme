@@ -15,7 +15,7 @@
         <div class="node-title">{{ node.title.value }}</div>
 
         {% if node.field_course_code.value %}
-          <h4 class="course-code">{{ node.field_course_code.value|t }}</h4>
+          <h4 class="course-code">Course Code: {{ node.field_course_code.value|t }}</h4>
         {% endif %}
 
         {% if node.field_course_overview.value %}

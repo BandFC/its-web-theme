@@ -41,16 +41,21 @@ body.page-node-type-course-instance #course-instance h3.market-area{
   font-size: 18px;
 }
 
-body.page-node-type-course-instance #course-instance h4.course-code:before{
-  content: "Course Code: ";
-}
-
 body.page-node-type-course-instance #course-instance h4.course-code{
   color: #747474;
   font-size: 1em;
 }
 
 body.page-node-type-course-instance #course-instance p{
+  color: #747474;
+  line-height: 20px;
+}
+
+body.page-node-type-course-instance #course-instance a{ color: #3F2683; }
+body.page-node-type-course-instance #course-instance a:hover{ text-decoration: underline; }
+
+body.page-node-type-course-instance #course-instance ol li,
+body.page-node-type-course-instance #course-instance ul li{
   color: #747474;
   line-height: 20px;
 }
