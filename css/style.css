@@ -23,7 +23,7 @@ body.navbar-is-fixed-top{
   margin-top: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   body .main-container{
     padding-top:216px;
@@ -33,8 +33,12 @@ body.navbar-is-fixed-top{
     padding-top:26px !important;
   }
 
+  body.user-logged-in.toolbar-vertical.toolbar-fixed .main-container{
+    padding-top:65px !important;
+  }
+
   body.user-logged-in.toolbar-horizontal .main-container{
-    padding-top:26px;
+    padding-top:65px;
   }
 
   body.user-logged-in.toolbar-tray-open .main-container{
@@ -43,7 +47,7 @@ body.navbar-is-fixed-top{
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   body .main-container{
     padding-top:216px;
@@ -295,6 +299,11 @@ Search Header
   background: #fff;
 }
 
+#search_header img{
+  margin: 0 auto;
+  display: block;
+}
+
 /*
 =========================================================================
 Jumbotron
@@ -379,11 +388,13 @@ footer.footer .thumb-overlay-text{
 .content-bottom .thumb-overlay-text h5{
   color:#EBE255;
   font-family: roboto_bold, sans-serif;
+  font-size: 1.5em;
 }
 
 .page-closure .thumb-overlay-text h5{
   color:#3F2683;
   font-family: roboto_bold, sans-serif;
+  font-size: 1.5em;
 }
 
 footer.footer .thumb-overlay-text h5{
@@ -394,13 +405,13 @@ footer.footer .thumb-overlay-text h5{
 .content-bottom .thumb-overlay-text p{
   color: #fff;
   font-family: roboto_reg, sans-serif;
-  font-size: 85%;
+  font-size: 1em;
 }
 
 .page-closure .thumb-overlay-text p{
   color: #747474;
   font-family: roboto_reg, sans-serif;
-  font-size: 85%;
+  font-size: 1em;
 }
 
 footer.footer .thumb-overlay-text p{
