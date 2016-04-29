@@ -1,0 +1,154 @@
+body.path-courses .main-container {	
+	background: linear-gradient(to bottom, 	
+		#3F2683 0px, #3F2683 200px, #3F2683 400px, 
+		#EBE255 400px, #EBE255 600px, 
+		#fff 600px, #fff 1200px, 
+		#3F2683 1200px, #3F2683 1400px, 
+		#EBE255 1400px, #EBE255 1600px, 
+		#fff 1600px, #fff 2200px, 
+		#3F2683 2200px, #3F2683 2400px, 
+		#EBE255 2400px, #EBE255 2600px, 
+		#fff 2600px, #fff 3200px, 
+		#3F2683 3200px, #3F2683 3400px, 
+		#EBE255 3400px, #EBE255 3600px, 
+		#fff 3600px, #fff 4200px
+	);
+}
+
+body.path-courses .main-container .region-header h1.page-header{
+	color:#fff;
+	font-family:roboto_bold, sans-serif;
+}
+
+body.path-courses .view-content div.table-responsive table.table caption{
+	color: #3F2683;
+	background:#ebebeb;
+	font-size:20px;
+	font-family: roboto_bold, sans-serif;
+}
+
+body.path-courses .view-content div.table-responsive > .table > tbody > tr > td{
+	cursor: pointer;
+}
+
+body.path-courses .view-content div.table-responsive table.table a{ 
+	color:#737373; 
+	display:block;
+	min-height:40px;
+	height:auto;
+	padding:10px;
+  margin:0px 0px 0px 0px;
+}
+
+body.path-courses .view-content div.table-responsive table.table a:hover{
+	color:#3F2683;
+	text-decoration:none;
+}
+
+body.path-courses .view-content div.table-responsive .table > tbody > tr > td{
+	padding: 0px;
+}
+
+body.path-courses .view-content div.table-responsive .table-hover > tbody > tr:hover {
+	background-color: #EBE255;
+  /* Transition */
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  o-transition: all ease 0.4s;
+  -ms-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+/*No Results */
+body.path-courses .view-empty a{
+	color: #EBE255;
+}
+
+/* Phones */
+@media (max-width: 767px) {
+
+	body.path-courses .view-content div.table-responsive table.table{
+		background:#fff;
+	}	
+	
+	body.path-courses .view-content div.table-responsive table.table caption{
+		padding:10px 0px 8px 10px;
+	}	
+	
+	body.path-courses .view-content div.table-responsive > .table > tbody > tr > td{
+		white-space: normal;
+	}
+	
+}
+
+/* Tablets, Desktops and Above */
+@media (min-width: 768px) {
+
+	body.path-courses .view-content div.table-responsive table.table caption{
+		padding:10px 0px 8px 10px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+	}
+  
+  /* Wrapper */
+  	
+  body.path-courses .view-content div.table-responsive{
+		margin-bottom: 20px;
+		padding: 0px;
+	}
+  
+  body.path-courses .view-content div.table-responsive:nth-child(odd){
+		width:75%;
+		float: right;
+		clear: both; 
+	}
+
+	body.path-courses .view-content div.table-responsive:nth-child(even){
+		width:75%;
+		float: left;
+		clear: both;
+	}
+  
+  /* Odd */
+  
+  body.path-courses .view-content div.table-responsive table.table:nth-child(even){
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: auto;
+    width:69%;
+    background:#fff;
+    border: 1px solid #ccc;
+}
+  
+  body.path-courses .view-content div.table-responsive .course-list-img:nth-child(odd){
+    width:30%;
+    height:auto;
+    float:left;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  /* Even */
+  
+  body.path-courses .view-content div.table-responsive table.table:nth-child(odd){
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: auto;
+    width:68%;
+    float:left;
+    background:#fff;
+    border: 1px solid #ccc;
+  }
+
+  body.path-courses .view-content div.table-responsive .course-list-img:nth-child(even){
+    width:30%;
+    height:auto;
+    float:left;
+    margin: 0px 0px 0px 7px;
+  }
+
+}
+
+
+
+
