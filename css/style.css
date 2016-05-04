@@ -296,13 +296,78 @@ Search Header
 */
 
 #search_header{
-  background: #fff;
+  height: 83px;
+  /*background: red;*/
 }
 
 #search_header img{
   margin: 0 auto;
   display: block;
 }
+
+input::-webkit-input-placeholder {
+  color: #747474 !important;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  color: #747474 !important;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+  color: #747474 !important;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+input:-ms-input-placeholder {
+  color: #747474 !important;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+.region-search-header form#search-block-form .input-group {
+  width: 100%;
+}
+
+.region-search-header form#search-block-form .input-group input{
+  color: #3F2683;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+.region-search-header form#search-block-form .input-group input[type=search]{
+  border: none;
+  border-radius: 0;
+  height: 83px;
+  font-size:20px;
+}
+
+.region-search-header form#search-block-form .input-group input[type=search].form-control:focus{
+  box-shadow: none;
+}
+
+.region-search-header form#search-block-form .input-group button.btn-primary{
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  height: 83px;
+  width: 83px;
+}
+
+.region-search-header form#search-block-form .input-group button.btn-primary span.glyphicon-search{
+  color:#3F2683;
+  font-size:40px;
+}
+
 
 /*
 =========================================================================
