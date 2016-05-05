@@ -153,6 +153,7 @@ body.path-search .region-content nav.pager-nav ul.pagination > .active > a{
 body.path-search .region-content nav.pager-nav ul.pagination > li >  a:hover{
   color: #3F2683;
   background-color: #EBE255;
+  border-color: #EBE255;
 }
 
 
