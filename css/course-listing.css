@@ -1,16 +1,16 @@
-body.path-courses .main-container {	
-	background: linear-gradient(to bottom, 	
-		#3F2683 0px, #3F2683 200px, #3F2683 400px, 
-		#EBE255 400px, #EBE255 600px, 
-		#fff 600px, #fff 1200px, 
-		#3F2683 1200px, #3F2683 1400px, 
-		#EBE255 1400px, #EBE255 1600px, 
-		#fff 1600px, #fff 2200px, 
-		#3F2683 2200px, #3F2683 2400px, 
-		#EBE255 2400px, #EBE255 2600px, 
-		#fff 2600px, #fff 3200px, 
-		#3F2683 3200px, #3F2683 3400px, 
-		#EBE255 3400px, #EBE255 3600px, 
+body.path-courses .main-container {
+	background: linear-gradient(to bottom,
+		#3F2683 0px, #3F2683 200px, #3F2683 400px,
+		#EBE255 400px, #EBE255 600px,
+		#fff 600px, #fff 1200px,
+		#3F2683 1200px, #3F2683 1400px,
+		#EBE255 1400px, #EBE255 1600px,
+		#fff 1600px, #fff 2200px,
+		#3F2683 2200px, #3F2683 2400px,
+		#EBE255 2400px, #EBE255 2600px,
+		#fff 2600px, #fff 3200px,
+		#3F2683 3200px, #3F2683 3400px,
+		#EBE255 3400px, #EBE255 3600px,
 		#fff 3600px, #fff 4200px
 	);
 }
@@ -31,8 +31,8 @@ body.path-courses .view-content div.table-responsive > .table > tbody > tr > td{
 	cursor: pointer;
 }
 
-body.path-courses .view-content div.table-responsive table.table a{ 
-	color:#737373; 
+body.path-courses .view-content div.table-responsive table.table a{
+	color:#737373;
 	display:block;
 	min-height:40px;
 	height:auto;
@@ -60,25 +60,25 @@ body.path-courses .view-content div.table-responsive .table-hover > tbody > tr:h
 }
 
 /*No Results */
-body.path-courses .view-empty a{
-	color: #EBE255;
-}
+body.path-courses .view-empty p{ color: #747474; }
+body.path-courses .view-empty a{ color: #747474; }
+body.path-courses .view-empty a:hover{ color: #3F2683; text-decoration: underline; }
 
 /* Phones */
 @media (max-width: 767px) {
 
 	body.path-courses .view-content div.table-responsive table.table{
 		background:#fff;
-	}	
-	
+	}
+
 	body.path-courses .view-content div.table-responsive table.table caption{
 		padding:10px 0px 8px 10px;
-	}	
-	
+	}
+
 	body.path-courses .view-content div.table-responsive > .table > tbody > tr > td{
 		white-space: normal;
 	}
-	
+
 }
 
 /* Tablets, Desktops and Above */
@@ -90,18 +90,18 @@ body.path-courses .view-empty a{
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
 	}
-  
+
   /* Wrapper */
-  	
+
   body.path-courses .view-content div.table-responsive{
 		margin-bottom: 20px;
 		padding: 0px;
 	}
-  
+
   body.path-courses .view-content div.table-responsive:nth-child(odd){
 		width:75%;
 		float: right;
-		clear: both; 
+		clear: both;
 	}
 
 	body.path-courses .view-content div.table-responsive:nth-child(even){
@@ -109,9 +109,9 @@ body.path-courses .view-empty a{
 		float: left;
 		clear: both;
 	}
-  
+
   /* Odd */
-  
+
   body.path-courses .view-content div.table-responsive table.table:nth-child(even){
     margin-bottom: 0px;
     margin-right: 0px;
@@ -120,16 +120,16 @@ body.path-courses .view-empty a{
     background:#fff;
     border: 1px solid #ccc;
 }
-  
+
   body.path-courses .view-content div.table-responsive .course-list-img:nth-child(odd){
     width:30%;
     height:auto;
     float:left;
     margin: 0px 0px 0px 0px;
   }
-  
+
   /* Even */
-  
+
   body.path-courses .view-content div.table-responsive table.table:nth-child(odd){
     margin-bottom: 0px;
     margin-left: 0px;
@@ -148,7 +148,3 @@ body.path-courses .view-empty a{
   }
 
 }
-
-
-
-
