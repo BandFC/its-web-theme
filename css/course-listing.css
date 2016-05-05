@@ -60,9 +60,9 @@ body.path-courses .view-content div.table-responsive .table-hover > tbody > tr:h
 }
 
 /*No Results */
-body.path-courses .view-empty p{ color: #2F2929; }
-body.path-courses .view-empty a{ color: #2F2929; }
-body.path-courses .view-empty a:hover{ color: #3F2683; text-decoration: underline; }
+body.path-courses .view-empty a{
+	color: #EBE255;
+}
 
 /* Phones */
 @media (max-width: 767px) {
