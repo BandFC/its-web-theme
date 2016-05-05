@@ -61,11 +61,11 @@ body.path-courses .view-content div.table-responsive .table-hover > tbody > tr:h
 
 /*No Results */
 body.path-courses .view-empty p{
-	color: #EBE255;
+	color: #3F2683;
 }
 
 body.path-courses .view-empty a{
-	color: #EBE255;
+	color: #3F2683;
 }
 
 /* Phones */
