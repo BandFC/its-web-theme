@@ -6,6 +6,7 @@ global-styling:
       css/pages.css: {}
       css/course-instance.css: {}
       css/course-listing.css: {}
+      css/search-results.css: {}
       css/animate.css: {}
   js:
     js/wow.min.js: {}

@@ -1,0 +1,51 @@
+body.path-search .main-container{
+  background: linear-gradient(to bottom, #3F2683 0px, #3F2683 200px, #3F2683 400px, #EBE255 400px, #EBE255 600px, #fff 600px, #fff 1200px, #3F2683 1200px, #3F2683 1400px, #EBE255 1400px, #EBE255 1600px, #fff 1600px, #fff 2200px, #3F2683 2200px, #3F2683 2400px, #EBE255 2400px, #EBE255 2600px, #fff 2600px, #fff 3200px, #3F2683 3200px, #3F2683 3400px, #EBE255 3400px, #EBE255 3600px, #fff 3600px, #fff 4200px );
+}
+
+
+body.path-search h1.page-header{
+  color:#fff;
+}
+
+body.path-search .region-content{
+  background:#fff;
+}
+
+body.path-search .region-content .input-group{
+  width:70%;
+  margin: 0px auto;
+}
+
+body.path-search .region-content h2{
+  padding:10px 25px;
+  color: #747474;
+  font-style: italic;
+  font-weight: 600;
+  font-size:20px;
+}
+
+body.path-search .region-content h2:after{
+  content: "...";
+}
+
+body.path-search .region-content ol{
+	margin: 0px;
+  list-style-type: none;
+}
+
+body.path-search .region-content ol li{
+  padding: 5px 10px 10px 15px;
+  margin: 10px 15px 10px 0px;
+}
+
+body.path-search .region-content ol li:nth-child(odd){
+  background: #f5f5f5;
+}
+
+body.path-search .region-content ol li h3 a{
+  color:#3F2683;
+}
+
+body.path-search .region-content ol li p{
+  color:#747474;
+}

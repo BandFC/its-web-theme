@@ -297,7 +297,7 @@ Search Header
 
 #search_header{
   height: 83px;
-  /*background: red;*/
+  background: #fff;
 }
 
 #search_header img{
@@ -307,28 +307,28 @@ Search Header
 
 input::-webkit-input-placeholder {
   color: #747474 !important;
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
   text-align: center;
 }
 
 input:-moz-placeholder { /* Firefox 18- */
   color: #747474 !important;
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
   text-align: center;
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
   color: #747474 !important;
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
   text-align: center;
 }
 
 input:-ms-input-placeholder {
   color: #747474 !important;
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
   text-align: center;
 }
@@ -339,7 +339,7 @@ input:-ms-input-placeholder {
 
 .region-search-header form#search-block-form .input-group input{
   color: #3F2683;
-  font-size: 30px;
+  font-size: 35px;
   font-style: italic;
   text-align: center;
 }
@@ -351,6 +351,7 @@ input:-ms-input-placeholder {
   font-size:20px;
 }
 
+.region-search-header form#search-block-form .input-group input[type=search].form-control,
 .region-search-header form#search-block-form .input-group input[type=search].form-control:focus{
   box-shadow: none;
 }
@@ -361,6 +362,10 @@ input:-ms-input-placeholder {
   border-radius: 0;
   height: 83px;
   width: 83px;
+}
+
+.region-search-header form#search-block-form .input-group button.btn:active{
+  box-shadow: none;
 }
 
 .region-search-header form#search-block-form .input-group button.btn-primary span.glyphicon-search{
