@@ -305,28 +305,28 @@ Search Header
   display: block;
 }
 
-input::-webkit-input-placeholder {
+#search_header input::-webkit-input-placeholder {
   color: #747474 !important;
   font-size: 25px;
   font-style: italic;
   text-align: center;
 }
 
-input:-moz-placeholder { /* Firefox 18- */
+#search_header input:-moz-placeholder { /* Firefox 18- */
   color: #747474 !important;
   font-size: 25px;
   font-style: italic;
   text-align: center;
 }
 
-input::-moz-placeholder {  /* Firefox 19+ */
+#search_header input::-moz-placeholder {  /* Firefox 19+ */
   color: #747474 !important;
   font-size: 25px;
   font-style: italic;
   text-align: center;
 }
 
-input:-ms-input-placeholder {
+#search_header input:-ms-input-placeholder {
   color: #747474 !important;
   font-size: 25px;
   font-style: italic;
