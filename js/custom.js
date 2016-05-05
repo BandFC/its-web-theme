@@ -9,3 +9,5 @@ var targeteven = '.path-courses .main-container .region-content .view-content di
 var imgodd = jq(targetodd).prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-img-default.png"></div>' );
 var imgeven = jq(targeteven).append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-img-default.png"></div>' );
 
+// Search Header Placeholder Text Override
+jQuery('.region-search-header .form-search').attr("placeholder", "Career / Course Search");
