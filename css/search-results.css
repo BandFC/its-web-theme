@@ -103,11 +103,13 @@ body.path-search .region-content h2{
   text-align: center;
 }
 
-body.path-search .region-content h3{
-  padding:10px 25px 20px 25px;
+body.path-search .region-content form + h3{
+  padding:0px 25px 20px 25px;
   color: #747474;
+  font-style: italic;
   font-weight: 600;
   font-size:20px;
+  text-align: center;
 }
 
 body.path-search .region-content h2:after{
@@ -129,7 +131,7 @@ body.path-search .region-content ol li:nth-child(odd){
   background: #f5f5f5;
 }
 
-body.path-search .region-content ol li h3 a{
+body.path-search .region-content ol li h3  a{
   color:#3F2683;
 }
 
@@ -150,7 +152,7 @@ body.path-search .region-content nav.pager-nav ul.pagination > .active > a{
   color: #fff;
 }
 
-body.path-search .region-content nav.pager-nav ul.pagination > li >  a:hover{
+body.path-search .region-content nav.pager-nav ul.pagination > li > a:hover{
   color: #3F2683;
   background-color: #EBE255;
   border-color: #EBE255;
