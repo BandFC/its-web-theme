@@ -146,7 +146,7 @@ body.path-search .region-content nav.pager-nav ul.pagination > .active > a{
   cursor: pointer;
 }
 
-body.path-search .region-content nav.pager-nav ul.pagination > .active > a:hover{
+body.path-search .region-content nav.pager-nav ul.pagination > a:hover{
   color: #3F2683;
   background-color: #EBE255;
 }
