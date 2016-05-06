@@ -305,36 +305,78 @@ Search Header
   display: block;
 }
 
-#search_header input::-webkit-input-placeholder {
-  color: #747474 !important;
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
+@media (max-width: 768px) {
+
+  .region-search-header form#search-block-form .input-group {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #search_header input::-webkit-input-placeholder {
+    color: #747474 !important;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  #search_header input:-moz-placeholder { /* Firefox 18- */
+    color: #747474 !important;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  #search_header input::-moz-placeholder {  /* Firefox 19+ */
+    color: #747474 !important;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  #search_header input:-ms-input-placeholder {
+    color: #747474 !important;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+
 }
 
-#search_header input:-moz-placeholder { /* Firefox 18- */
-  color: #747474 !important;
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-}
+@media (min-width: 769px) {
 
-#search_header input::-moz-placeholder {  /* Firefox 19+ */
-  color: #747474 !important;
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-}
+  .region-search-header form#search-block-form .input-group {
+    width: 60%;
+    margin: 0 auto;
+  }
 
-#search_header input:-ms-input-placeholder {
-  color: #747474 !important;
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-}
+  #search_header input::-webkit-input-placeholder {
+    color: #747474 !important;
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+  }
 
-.region-search-header form#search-block-form .input-group {
-  width: 100%;
+  #search_header input:-moz-placeholder { /* Firefox 18- */
+    color: #747474 !important;
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  #search_header input::-moz-placeholder {  /* Firefox 19+ */
+    color: #747474 !important;
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  #search_header input:-ms-input-placeholder {
+    color: #747474 !important;
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+  }
+
 }
 
 .region-search-header form#search-block-form .input-group input{
