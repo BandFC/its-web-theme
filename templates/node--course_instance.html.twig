@@ -42,6 +42,10 @@
           <div class="occurrence_data">
             {{ drupal_block('views_block__course_occurence_view_course_occurrences') }}
           </div>
+        {% elseif node.field_market_area.value == "Apprenticeships" %}
+        <div class="apprenticeship-apply-button">
+          {{ drupal_block('views_block__apprenticeship_apply_block_1') }}
+        </div>
         {% endif %}
 
       </div>
