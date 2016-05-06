@@ -1,4 +1,4 @@
-body.path-courses .main-container {
+/*body.path-courses .main-container {
 	background: linear-gradient(to bottom,
 		#3F2683 0px, #3F2683 200px, #3F2683 400px,
 		#EBE255 400px, #EBE255 600px,
@@ -13,7 +13,7 @@ body.path-courses .main-container {
 		#EBE255 3400px, #EBE255 3600px,
 		#fff 3600px, #fff 4200px
 	);
-}
+}*/
 
 body.path-courses .main-container .region-header h1.page-header{
 	color:#fff;
