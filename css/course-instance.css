@@ -133,6 +133,27 @@ body.page-node-type-course-instance #course-instance table tfoot td{
     padding: 10px 5px 10px 10px;
 }
 
+body.page-node-type-course-instance .apprenticeship-apply-button{
+	width:200px;
+	margin:20px 0px 0px 0px;
+}
+
+body.page-node-type-course-instance .apprenticeship-apply-button #block-views-block-apprenticeship-apply-block-1 .field-content > a{
+	padding: 15px 20px;
+	border:3px solid #3F2683;
+	display:block;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+body.page-node-type-course-instance .apprenticeship-apply-button #block-views-block-apprenticeship-apply-block-1 .field-content > a:hover{
+	padding: 15px 20px;
+	border:3px solid #3F2683;
+	background:#3F2683;
+	color:#fff;
+	text-decoration:none;
+}
 
 /*
 =========================================================================
