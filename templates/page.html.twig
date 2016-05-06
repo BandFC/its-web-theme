@@ -124,13 +124,17 @@
   {# Jumbotron #}
   {% if page.jumbotron %}
     {% block jumbotron %}
-      <div role="Jumbotron" class="jumbotron about">
+
+      {% set jumbotronClass = node.field_section_class.value %}
+
+      <div role="Jumbotron" class="jumbotron {{ jumbotronClass }}">
         <div class="container tagline">
           <div class="row">
             {{ page.jumbotron }}
           </div>
         </div>
       </div>
+      
     {% endblock %}
   {% endif %}
 

@@ -39,22 +39,22 @@ body.path-node.page-node-type-page .jumbotron h3{
 }
 
 .jumbotron.about {
+  background: url("../images/jtron_about.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.jumbotron.education-partners{
   background: url("../images/jtron_edu.jpg") center center no-repeat;
   background-size: cover;
 }
 
-.jumbotron.education {
-  background: url("../images/jtron_edu.jpg") center center no-repeat;
+.jumbotron.industry-partners{
+  background: url("../images/jtron_ind.jpg") center center no-repeat;
   background-size: cover;
 }
 
-.jumbotron.industry {
-  background: url("../images/jtron_edu.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.jumbotron.press {
-  background: url("../images/jtron_edu.jpg") center center no-repeat;
+.jumbotron.press{
+  background: url("../images/jtron_press.jpg") center center no-repeat;
   background-size: cover;
 }
 
