@@ -226,6 +226,13 @@ Navbar
   border: 1px solid #3f2682;
 }
 
+/* Dropdown Menu */
+
+.navbar-nav > li > ul.dropdown-menu{
+  background: red;
+  left:0;
+}
+
 @media (max-width: 991px) {
 
   /* Show toggle menu */
