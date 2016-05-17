@@ -63,9 +63,9 @@ jq('body.path-courses .view-content div.table-responsive table.table caption').e
 		case "Building and Construction":
 			
 				if (i % 2 === 0){ 
-					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/building.jpg"></div>' );
 				} else { 
-					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/building.jpg"></div>' );
 				}
 	
 			break;
@@ -74,9 +74,9 @@ jq('body.path-courses .view-content div.table-responsive table.table caption').e
 		case "Business and Project Management":
 			
 				if (i % 2 === 0){ 
-					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/business.jpg"></div>' );
 				} else { 
-					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/business.jpg"></div>' );
 				}
 	
 			break;
@@ -228,9 +228,9 @@ jq('body.path-courses .view-content div.table-responsive table.table caption').e
 		case "Sport, Leisure and Recreation":
 			
 				if (i % 2 === 0){ 
-					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/sport.jpg"></div>' );
 				} else { 
-					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/sport.jpg"></div>' );
 				}
 	
 			break;
@@ -239,9 +239,9 @@ jq('body.path-courses .view-content div.table-responsive table.table caption').e
 		case "Travel and Tourism":
 			
 				if (i % 2 === 0){ 
-					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").prepend( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/travel.jpg"></div>' );
 				} else { 
-					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/default.jpg"></div>' );
+					jq(this).closest("div.table-responsive").append( '<div class="course-list-img"><img class="img-responsive hidden-xs" src="/themes/itsweb/images/course-search/travel.jpg"></div>' );
 				}
 	
 			break;
