@@ -20,6 +20,19 @@ body.path-courses .main-container .region-header h1.page-header{
 	font-family:roboto_bold, sans-serif;
 }
 
+body.path-courses .view-header p{
+	color:#737373;
+	font-family:roboto_regular, sans-serif;
+	line-height:26px;
+	font-size:14px;
+	padding: 5px 0px;
+	margin:0px;
+}
+
+body.path-courses .view-header p:last-child{
+	margin:0px 0px 20px 0px; 
+}
+
 body.path-courses .view-content div.table-responsive table.table caption{
 	color: #3F2683;
 	background:#ebebeb;

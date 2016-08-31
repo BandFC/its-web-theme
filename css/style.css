@@ -568,7 +568,7 @@ footer.footer .thumb-box-overlay div{
 footer.footer .thumb-overlay-text{
   display: block;
   margin:0;
-  padding: 20px 0px 0px 0px;
+  padding-top: 8%;
   width: 80%;
   height: 60%;
 }
