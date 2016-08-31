@@ -102,6 +102,11 @@ body.path-frontpage .page-breaker h1{
   top: 250px;
 }
 
+body.path-frontpage .page-breaker h1 a,
+body.path-frontpage .page-breaker h1 a:hover{
+  color: #FFF;
+}
+
 /* Fallback for course imagery on XS devices */
 
 body.path-frontpage div.course-xs-fallback{
